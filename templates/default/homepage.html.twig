@@ -11,20 +11,31 @@
 
 {% block body %}
     <div class="page-header">
-        <h1>{{ 'title.homepage'|trans|raw }}</h1>
+        <h1>Donald symfo media press</h1>
     </div>
 
     <div class="row">
-
+        <div class="col-sm-6">
+            <div class="jumbotron">
+                <p>
+                    Toute lactualité sur Simphony presse
+                </p>
+                <p>
+                    <a class="btn btn-primary btn-lg" href="{{ path('blog_index') }}">
+                        <i class="fa fa-users" aria-hidden="true"></i> Visittez
+                    </a>
+                </p>
+            </div>
+        </div>
 
         <div class="col-sm-6">
             <div class="jumbotron">
                 <p>
-                    {{ 'help.browse_admin'|trans|raw }}
+                   Administrateur
                 </p>
                 <p>
                     <a class="btn btn-primary btn-lg" href="{{ path('admin_index') }}">
-                        <i class="fa fa-lock" aria-hidden="true"></i> {{ 'action.browse_admin'|trans }}
+                        <i class="fa fa-lock" aria-hidden="true"></i> Welcome
                     </a>
                 </p>
             </div>
